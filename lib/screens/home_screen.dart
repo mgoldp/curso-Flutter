@@ -11,12 +11,13 @@ class HomeScreen extends StatelessWidget {
           elevation: 0.0,
         ),
         body: Center(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text('Click Counter:'),
-            Text('0'),
-          ],
-        )));
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const <Widget>[
+              Text('Número de clicks:'),
+              Text('10'),
+            ],
+          ),
+        ));
   }
 }

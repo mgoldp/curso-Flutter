@@ -39,23 +39,17 @@ class _CounterScreenState extends State<CounterScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           FloatingActionButton(
-              child: const Icon(Icons.exposure_plus_1),
-              onPressed: () {
-                counter++;
-                setState(() {});
-              }),
+            child: const Icon(Icons.exposure_plus_1),
+            onPressed: () => setState(() => counter++),
+          ),
           FloatingActionButton(
-              child: const Icon(Icons.exposure_zero),
-              onPressed: () {
-                counter = 0;
-                setState(() {});
-              }),
+            child: const Icon(Icons.exposure_zero),
+            onPressed: () => setState(() => counter = 0),
+          ),
           FloatingActionButton(
-              child: const Icon(Icons.exposure_minus_1),
-              onPressed: () {
-                counter--;
-                setState(() {});
-              }),
+            child: const Icon(Icons.exposure_minus_1),
+            onPressed: () => setState(() => counter--),
+          ),
         ],
       ),
     );
